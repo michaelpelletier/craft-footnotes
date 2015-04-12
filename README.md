@@ -103,7 +103,8 @@ Simple example
 </article>
 ```
 
-Footnote definitions in Matrix blocks
+Footnote definitions in Matrix blocks  
+Example uses `if block.type == 'footnotes'` in the loop instead of adding a `type` property to the Matrix criteria to work around a bug with Matrix and Live Preview (→ see [related question][1] on Stack Exchange).
 
 ```html
 {% for block in entry.articleMatrix if block.type == 'footnotes' %}
@@ -187,10 +188,13 @@ Renders the footnotes list to the template.
 
 ### Footnotes parser
 
-The prefered syntax styles the parser is expecting (→ available syntax styles) and an option to remove unmatched markers.
+The prefered syntax styles the parser is expecting (→ [available syntax styles](#syntax-styles)) and an option to remove unmatched markers.
 
 ### Markup for footnote markers and lists
 
 The markup for how footnote markers and lists are rendered can be modified by using your own templates. Create templates from scratch or edit upon examples provided with the plugin.
 
 Save the templates anywhere in your craft/templates/ folder and specify the path in the plugin settings.
+
+
+  [1]: http://craftcms.stackexchange.com/q/8879/125
