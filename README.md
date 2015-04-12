@@ -116,7 +116,7 @@ Parses a string for footnotes markers and replaces them with links to the corres
 `markerSyntax` (optional)
 :   Override the syntax style defined in the plugin settings.
 
-### `craft.footnotes.setFootnotes(articleId, definitionSyntax)`
+### `setFootnotes(articleId, definitionSyntax)`
 
 Parses a string for footnote definitions.
 
@@ -128,7 +128,7 @@ Parses a string for footnote definitions.
 `definitionSyntax` (optional)
 :   Override the syntax style defined in the plugin settings.
 
-### `craft.footnotes.getFootnotes(articleId)`
+### `getFootnotes(articleId)`
 
 Renders the footnotes list to the template.
 
