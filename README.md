@@ -85,7 +85,9 @@ It takes three steps to do footnotes in your templates.
 
 3. Render the footnotes list to the template using the Twig variable `craft.footnotes.getFootnotes()`.
 
-#### Example
+#### Examples
+
+Simple example
 
 ```html
 {% do craft.footnotes.setFootnotes(entry.footnotes) %}
@@ -101,6 +103,49 @@ It takes three steps to do footnotes in your templates.
 </article>
 ```
 
+Footnote definitions in Matrix blocks
+
+```html
+{% for block in entry.articleMatrix if block.type == 'footnotes' %}
+    {% do craft.footnotes.setFootnotes(block.footnotes) %}
+{% endfor %}
+
+<article>
+    <h1>{{ entry.title }}</h1>
+
+    {% for block in entry.articleMatrix %}
+
+        {% if block.type == "copy" %}
+            {{ block.copy|footnotes }}
+        {% endif %}
+
+    {% endfor %}
+
+    <aside class="footnotes">
+        {{ craft.footnotes.getFootnotes() }}
+    </aside>
+</article>
+```
+
+Multiple articles on a single page
+
+```html
+{% for entry in entries %}
+
+    {% do craft.footnotes.setFootnotes(entry.footnotes, entry.slug) %}
+
+    <article>
+        <h1>{{ entry.title }}</h1>
+
+        {{ entry.articleBody|footnotes(entry.slug) }}
+
+        <aside class="footnotes">
+            {{ craft.footnotes.getFootnotes(entry.slug) }}
+        </aside>
+    </article>
+
+{% endfor %}
+```
 
 ## Twig filter and variables
 
