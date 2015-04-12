@@ -104,7 +104,7 @@ Simple example
 ```
 
 Footnote definitions in Matrix blocks  
-Example uses `if block.type == 'footnotes'` in the loop instead of adding a `type` property to the Matrix criteria to work around a bug with Matrix and Live Preview (→ see [related question][1] on Stack Exchange).
+<small>*Example uses `if block.type == 'footnotes'` in the loop instead of adding a `type` property to the Matrix criteria to work around a bug with Matrix and Live Preview (→ see [related question][1] on Stack Exchange).*</small>
 
 ```html
 {% for block in entry.articleMatrix if block.type == 'footnotes' %}
