@@ -35,7 +35,7 @@ For really long articles it is also possible to have multiple Matrix blocks, ena
 
 Footnote definitions and footnote markers can be written down in different syntax styles. The prefered syntax style can be configured in the plugin settings.
 
-#### Syntax for definitions
+Syntax for definitions
 
 - Redactor syntax:  
   `1. My footnote definition</p>`
@@ -44,7 +44,7 @@ Footnote definitions and footnote markers can be written down in different synta
 - Markdown syntax  
   `[^1]: My footnote definition`
 
-#### Syntax for markers
+Syntax for markers
 
 - Redactor syntax  
   `<fn-marker>1</fn-marker>`
@@ -110,13 +110,11 @@ Parses a string for footnotes markers and replaces them with links to the corres
 
 #### Parameters
 
-<dl>
-  <dt>`articleId` (optional)</dt>
-  <dd>Link footnotes to a specific article, in case there are multiple articles on a single page.</dd>
+`articleId` (optional)
+:   Link footnotes to a specific article, in case there are multiple articles on a single page.
 
-  <dt>`markerSyntax` (optional)</dt>
-  <dd>Override the syntax style defined in the plugin settings.</dd>
-</dl>
+`markerSyntax` (optional)
+:   Override the syntax style defined in the plugin settings.
 
 ### `craft.footnotes.setFootnotes(articleId, definitionSyntax)`
 
@@ -124,13 +122,11 @@ Parses a string for footnote definitions.
 
 #### Parameters
 
-<dl>
-  <dt>`articleId` (optional)</dt>
-  <dd>Link footnotes to a specific article, in case there are multiple articles on a single page.</dd>
+`articleId` (optional)
+:   Link footnotes to a specific article, in case there are multiple articles on a single page.
 
-  <dt>`definitionSyntax` (optional)</dt>
-  <dd>Override the syntax style defined in the plugin settings.</dd>
-</dl>
+`definitionSyntax` (optional)
+:   Override the syntax style defined in the plugin settings.
 
 ### `craft.footnotes.getFootnotes(articleId)`
 
@@ -138,10 +134,8 @@ Renders the footnotes list to the template.
 
 #### Parameters
 
-<dl>
-  <dt>`articleId` (optional)</dt>
-  <dd>Link footnotes to a specific article, in case there are multiple articles on a single page.</dd>
-</dl>
+`articleId` (optional)
+:   Link footnotes to a specific article, in case there are multiple articles on a single page.
 
 
 ## Plugin settings
