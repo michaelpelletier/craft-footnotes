@@ -87,7 +87,7 @@ It takes three steps to do footnotes in your templates.
 
 #### Examples
 
-Simple example
+##### Simple example
 
 ```html
 {% do craft.footnotes.setFootnotes(entry.footnotes) %}
@@ -103,8 +103,9 @@ Simple example
 </article>
 ```
 
-Footnote definitions in Matrix blocks  
-<small>*Example uses `if block.type == 'footnotes'` in the loop instead of adding a `type` property to the Matrix criteria to work around a bug with Matrix and Live Preview (→ see [related question][1] on Stack Exchange).*</small>
+##### Footnote definitions in Matrix blocks
+
+Example uses `if block.type == 'footnotes'` in the loop instead of adding a `type` property to the Matrix criteria to work around a bug with Matrix and Live Preview (→ see [related question][1] on Stack Exchange).
 
 ```html
 {% for block in entry.articleMatrix if block.type == 'footnotes' %}
@@ -128,7 +129,7 @@ Footnote definitions in Matrix blocks
 </article>
 ```
 
-Multiple articles on a single page
+##### Multiple articles on a single page
 
 ```html
 {% for entry in entries %}
