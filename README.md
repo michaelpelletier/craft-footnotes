@@ -35,7 +35,7 @@ For really long articles it is also possible to have multiple Matrix blocks, ena
 
 Footnote definitions and footnote markers can be written down in different syntax styles. The prefered syntax style can be configured in the plugin settings.
 
-Syntax for definitions
+#### Syntax for definitions
 
 - Redactor syntax:  
   `1. My footnote definition</p>`
@@ -44,7 +44,7 @@ Syntax for definitions
 - Markdown syntax  
   `[^1]: My footnote definition`
 
-Syntax for markers
+#### Syntax for markers
 
 - Redactor syntax  
   `<fn-marker>1</fn-marker>`
