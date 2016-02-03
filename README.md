@@ -1,4 +1,4 @@
-# Footnotes plugin for Craft
+# Footnotes plugin for Craft CMS
 
 A simple yet powerful footnotes plugin for Craft. The plugin is in **private beta** right now.
 
