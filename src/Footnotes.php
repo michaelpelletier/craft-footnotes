@@ -40,8 +40,8 @@ class Footnotes extends Component
                 'markerCount' => null,
             ];
 
-            print_r('FOOTNOTES');
-            print_r($this->_footnotes);
+            error_log(print_r('FOOTNOTES'));
+            error_log(print_r($this->_footnotes));
         }
     }
 
@@ -70,8 +70,8 @@ class Footnotes extends Component
                 'markerCount' => null,
             ];
 
-            print_r('FOOTNOTES');
-            print_r($this->_footnotes);
+            error_log(print_r('FOOTNOTES'));
+            error_log(print_r($this->_footnotes));
         };
 
         return preg_replace_callback($pattern, $callback, $str);
