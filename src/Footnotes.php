@@ -39,6 +39,9 @@ class Footnotes extends Component
                 'noteId' => null,
                 'markerCount' => null,
             ];
+
+            print_r('FOOTNOTES');
+            print_r($this->_footnotes);
         }
     }
 
@@ -66,6 +69,9 @@ class Footnotes extends Component
                 'noteId' => null,
                 'markerCount' => null,
             ];
+
+            print_r('FOOTNOTES');
+            print_r($this->_footnotes);
         };
 
         return preg_replace_callback($pattern, $callback, $str);
