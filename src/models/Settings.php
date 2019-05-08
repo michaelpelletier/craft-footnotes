@@ -26,6 +26,9 @@ class Settings extends Model
         // Redactor syntax: `<p>1. My footnote definition</p>`
         'redactor' => '/<p>\s*(?P<name>\S+?)[ ]?\.[ ]*\n?(?P<text>[\s\S]+?)<\/p>/',
 
+        // Redactor List syntax: `<ol><li>1. My footnote definition</li></ol>`
+        'redactor-list' => '/<li>\s*(?P<name>\S+?)[ ]?\.[ ]*\n?(?P<text>[\s\S]+?)<\/li>/',
+
         // Plain text syntax: `1. My footnote definition`
         'plaintext' => '/^[ ]{0,3}(?P<name>\S+?)[ ]?\.[ ]*\n?(?P<text>(.+|\n(?!\S+?[ ]?\.\s)(?!\n+[ ]{0,3}\S))*)/xm',
 
